@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useEffect, useState } from "react";
-import { Card } from "../components/card";
+import { Card } from "../components/Card";
 import { Navbar } from "../components/Navbar";
 import { Task } from "../components/TaskAdd";
 import { toggleTheame } from "../context/TheamContext";
