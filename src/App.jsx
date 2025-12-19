@@ -9,7 +9,7 @@ import PrivateRoutes from "./authGard/PrivateRoutes";
 import AllTodos from "./pages/AllTodos";
 import Layout from "./layout/Layout";
 import DynamicData from "./pages/DynamicData";
-import { ErrorPage } from "../pages/ErrorPage";
+import { ErrorPage } from "./pages/ErrorPage";
 
 const routes = createBrowserRouter([
   {
