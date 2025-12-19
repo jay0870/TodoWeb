@@ -1,19 +1,21 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { Login } from "./pages/Login";
 import { Register } from "./components/Register";
 import PrivateRoutes from "./authGard/PrivateRoutes";
-import { Alltodos } from "./pages/allTodos";
+import AllTodos from "./pages/AllTodos";
 import Layout from "./layout/Layout";
 import DynamicData from "./pages/DynamicData";
-import { ErrorPage } from "./pages/errorPage";
+import { ErrorPage } from "../pages/ErrorPage";
+
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement:<ErrorPage/>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -33,9 +35,12 @@ const routes = createBrowserRouter([
       },
       {
         path: "/all-todos",
-        element: <Alltodos />,
+        element: <AllTodos />,
       },
-      { path: "/details/:id", element: <DynamicData /> },
+      {
+        path: "/details/:id",
+        element: <DynamicData />,
+      },
     ],
   },
   {

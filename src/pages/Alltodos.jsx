@@ -1,16 +1,16 @@
 import { useEffect, useState, useContext } from "react";
-import "./Alltodos.css";
+import "./AllTodos.css";
 import { toggleTheame } from "../context/TheamContext";
 
-export function Alltodos() {
+const AllTodos = () => {
   const [apiData, setApiData] = useState([]);
   const { mode } = useContext(toggleTheame);
 
-  async function fetchData() {
+  const fetchData = async () => {
     const response = await fetch("https://dummyjson.com/todos");
-    const res = await response.json();
-    setApiData(res.todos);
-  }
+    const result = await response.json();
+    setApiData(result.todos);
+  };
 
   useEffect(() => {
     fetchData();
@@ -38,4 +38,6 @@ export function Alltodos() {
       </div>
     </div>
   );
-}
+};
+
+export default AllTodos;
