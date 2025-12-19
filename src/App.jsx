@@ -6,7 +6,7 @@ import { AboutPage } from "./pages/AboutPage";
 import { Login } from "./pages/Login";
 import { Register } from "./components/Register";
 import PrivateRoutes from "./authGard/PrivateRoutes";
-import AllTodos from "./pages/AllTodos";
+import AllTodos from "./pages/Alltodos";
 import Layout from "./layout/Layout";
 import DynamicData from "./pages/DynamicData";
 import { ErrorPage } from "./pages/ErrorPage";

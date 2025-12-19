@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import "./AllTodos.css";
+import "./Alltodos.css";
 import { toggleTheame } from "../context/TheamContext";
 
 const AllTodos = () => {
