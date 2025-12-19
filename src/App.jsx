@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { Login } from "./pages/Login";
@@ -9,7 +8,7 @@ import PrivateRoutes from "./authGard/PrivateRoutes";
 import AllTodos from "./pages/Alltodos";
 import Layout from "./layout/Layout";
 import DynamicData from "./pages/DynamicData";
-import { ErrorPage } from "./pages/ErrorPage";
+import { ErrorPage } from "./pages/ErrorPage.jsx";
 
 const routes = createBrowserRouter([
   {
