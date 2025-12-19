@@ -1,0 +1,85 @@
+.alltodos-dark {
+  background-color: #4a4a4a;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.alltodos-light {
+  background-color: #e6dfdf;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.heading {
+  max-width: 900px;
+  margin: 0 auto 35px auto;
+  padding-bottom: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.heading h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd700;
+  margin: 0 auto;
+}
+
+.alltodos-light .heading h1 {
+  color: #222222;
+}
+
+.todo-list {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.alltodos-dark .list-Todo {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+.alltodos-light .list-Todo {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.status-complete {
+  background-color: #e63946;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status-pending {
+  background-color: #ffd60a;
+  color: #000000;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}

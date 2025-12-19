@@ -1,0 +1,63 @@
+/* DARK MODE */
+.about-body {
+  background-color: #3f3f3f;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.body-light {
+  background-color: #e6dfdf;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.about-todo {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  padding-bottom: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.about-todo h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.about-todo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd700;
+  margin: 0 auto;
+}
+
+.container-about {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.details {
+  margin-bottom: 24px;
+}
+
+.highlight {
+  color: #ff4d4d;
+  font-weight: 600;
+}
+
+.body-light .about-todo h1 {
+  color: #1a1919;
+}
+
+.body-light .container-about {
+  color: #1a1919;
+}
